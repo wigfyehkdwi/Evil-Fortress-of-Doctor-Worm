@@ -19,6 +19,7 @@ public class TurretLook : MonoBehaviour
         if (laserSwitch.lasersAreOff)
         {
             laser.SetActive(false);
+            return;
         }
         transform.LookAt(player);
     }
